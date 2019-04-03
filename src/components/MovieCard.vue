@@ -2,7 +2,7 @@
   <div id = "movie-card">
     <div class="card">
       <div class = "card-image">
-        <figure class="image is-4by3">
+        <figure class="image is-square">
           <img :src="movie.img">
         </figure>
       </div>
@@ -17,12 +17,20 @@
 
 <script>
 export default {
+  // movie prop that is being passed from the MovieList
   props: {
     movie: {}
   }
 }
 </script>
 
+
 <style lang="scss" scoped>
+
+#movie-card {
+  margin:auto;
+  margin-top: 50px;
+  width: 50%;
+}
 
 </style>
